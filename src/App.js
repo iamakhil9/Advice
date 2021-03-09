@@ -18,8 +18,10 @@ axios.get('https://api.adviceslip.com/advice').then( res=> {this.setState({advic
     return (
   
     <div className="App">
+      <div class="app-info">
       <h3>{this.state.advice}</h3>
-      <button  class="btn" onClick={this.Fadvice}>click</button>
+      <button  class="btn" onClick={this.Fadvice}>Give me Advice</button>
+    </div>
     </div>
   );
 }
